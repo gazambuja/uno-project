@@ -27,7 +27,6 @@ var app = {
             app.onDeviceReady();
         }
         
-        //app.onDeviceReady();
     },
     // deviceready Event Handler
     //
@@ -109,7 +108,7 @@ var app = {
         }).addTo(map);
 
         /* Localizo por defecto al usuario */
-        // lc.locate();
+        lc.locate();
 
     },
 
