@@ -12,17 +12,29 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener("deviceready", function(e) {
-            console.log("deviceready");
-            app.onDeviceReady();
-        }, false);
 
+        $(document).ready(function() {
+            // are we running in native app or in browser?
+            window.isphone = false;
+            if(document.URL.indexOf("http://") === -1 
+                && document.URL.indexOf("https://") === -1) {
+                window.isphone = true;
+            }
+
+            if(window.isphone) {
+                console.log("deviceready");
+                document.addEventListener("deviceready", app.onDeviceReady, false);
+            } else {
+                app.onDeviceReady();
+            }
+        }
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        app.receivedEvent('deviceready');
         console.log("function onDeviceReady");
 
         $.getJSON( "http://admin.unowifi.com/api/getUID/?callback=?", function( data ) {
@@ -31,6 +43,18 @@ var app = {
         });
     },
 
+    // Update DOM on a Received Event
+    receivedEvent: function(id) { // I didn't really use this, yet I left it in here as it's in the demo
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+    },
+    
     geoMe: function(uid) {
         console.log("function geoMe");
 
