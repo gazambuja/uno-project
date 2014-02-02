@@ -13,6 +13,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
 
+        /*
         // are we running in native app or in browser?
         window.isphone = false;
         if(document.URL.indexOf("http://") === -1 
@@ -26,13 +27,15 @@ var app = {
         } else {
             app.onDeviceReady();
         }
+        */
+        app.onDeviceReady();
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        //app.receivedEvent('deviceready');
         console.log("function onDeviceReady");
 
         $.getJSON( "http://admin.unowifi.com/api/getUID/?callback=?", function( data ) {
