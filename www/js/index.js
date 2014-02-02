@@ -13,7 +13,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
 
-        /*
         // are we running in native app or in browser?
         window.isphone = false;
         if(document.URL.indexOf("http://") === -1 
@@ -27,8 +26,8 @@ var app = {
         } else {
             app.onDeviceReady();
         }
-        */
-        app.onDeviceReady();
+        
+        //app.onDeviceReady();
     },
     // deviceready Event Handler
     //
@@ -42,6 +41,13 @@ var app = {
             app.geoMe(data.uid);
             app.getShops(data.uid);
         });
+
+        window.MacAddress.getMacAddress(
+            function(macAddress) {
+                console.log(macAddress);
+                globalOptions.macAddress = macAddress;
+            },function(fail) {console.log(fail);}
+        );
     },
 
     // Update DOM on a Received Event
