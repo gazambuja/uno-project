@@ -53,6 +53,7 @@
     <!-- <gap:platform name="winphone" /> -->
 
     <!-- Plugins can also be added here. -->
+    <gap:plugin name="org.apache.cordova.device" /> <!-- Device plugin -->  
     <gap:plugin name="com.badrit.macaddress" /> <!-- Get MacAddress plugin -->  
     <!--
         <gap:plugin name="Example" />
