@@ -47,7 +47,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) { // I didn't really use this, yet I left it in here as it's in the demo
         var parentElement = document.getElementById(id);
-        if(typeof(parentElement.type) != "undefined"){
+        if(parentElement && typeof(parentElement.type) != "undefined"){
             var listeningElement = parentElement.querySelector('.listening');
             var receivedElement = parentElement.querySelector('.received');
 
