@@ -23,9 +23,9 @@ var app = {
 
             if(window.isphone) {
                 console.log("deviceready");
-                document.addEventListener("deviceready", app.onDeviceReady, false);
+                document.addEventListener("deviceready", this.onDeviceReady, false);
             } else {
-                app.onDeviceReady();
+                this.onDeviceReady();
             }
         }
     },
@@ -54,7 +54,7 @@ var app = {
 
         console.log('Received Event: ' + id);
     },
-    
+
     geoMe: function(uid) {
         console.log("function geoMe");
 
