@@ -24,7 +24,7 @@ var app = {
             console.log("deviceready");
             document.addEventListener("deviceready", this.onDeviceReady, false);
         } else {
-            this.onDeviceReady();
+            app.onDeviceReady();
         }
     },
     // deviceready Event Handler
