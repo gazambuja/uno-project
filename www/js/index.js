@@ -13,20 +13,18 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
 
-        $(document).ready(function() {
-            // are we running in native app or in browser?
-            window.isphone = false;
-            if(document.URL.indexOf("http://") === -1 
-                && document.URL.indexOf("https://") === -1) {
-                window.isphone = true;
-            }
+        // are we running in native app or in browser?
+        window.isphone = false;
+        if(document.URL.indexOf("http://") === -1 
+            && document.URL.indexOf("https://") === -1) {
+            window.isphone = true;
+        }
 
-            if(window.isphone) {
-                console.log("deviceready");
-                document.addEventListener("deviceready", this.onDeviceReady, false);
-            } else {
-                this.onDeviceReady();
-            }
+        if(window.isphone) {
+            console.log("deviceready");
+            document.addEventListener("deviceready", this.onDeviceReady, false);
+        } else {
+            this.onDeviceReady();
         }
     },
     // deviceready Event Handler
