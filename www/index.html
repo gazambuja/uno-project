@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>UNO | Loyalty Marketing</title>
+    <meta name="description" content="Ofrece a locales comerciales que atienden público (gastronomía, vestimenta, hotelería, belleza y salud entre otras) herramientas para conocer mejor a su cliente al mismo tiempo que permite gratificar a los más recurrentes." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/jquery.mobile-min.css" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css" type="text/css" />
+    <link rel="stylesheet" href="css/L.Control.Locate.css" type="text/css" />
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="shortcut icon" sizes="196x196" href="img/logo.png">
+    <link rel="shortcut icon" sizes="128x128" href="img/logo_icon.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="img/logo_icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="img/logo_icon.png">
+</head>
+<body>
+    <div data-role="page" id="page_map">
+        <div data-role="header">
+            <h1>UNO | Mapa</h1>
+        </div>
+        <div data-role="content" class="no_margin">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet.awesome-markers.min.js"></script>
+    <script src="js/L.Control.Locate.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        /* Aguardo que este todo iniciado para comenzar */
+        app.initialize();
+        window.MacAddress.getMacAddress(
+            function(macAddress) {alert(macAddress);},function(fail) {alert(fail);}
+        );
+    </script>
+</body>
+</html>
