@@ -36,10 +36,15 @@
     <script src="js/index.js"></script>
     <script type="text/javascript">
         /* Aguardo que este todo iniciado para comenzar */
-        app.initialize();
+        console.log("buscando MAC");
         window.MacAddress.getMacAddress(
-            function(macAddress) {alert(macAddress);},function(fail) {alert(fail);}
+            function(macAddress) {
+                console.log(macAddress);
+                alert(macAddress);
+            },function(fail) {alert(fail);}
         );
+        console.log("Iniciando app...");
+        app.initialize();
     </script>
 </body>
 </html>
