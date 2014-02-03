@@ -112,10 +112,26 @@
 	"buffers":
 	[
 		{
+			"file": "www/index.html",
+			"settings":
+			{
+				"buffer_size": 2200,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "www/config.xml",
 			"settings":
 			{
-				"buffer_size": 6280,
+				"buffer_size": 6556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/js/index.js",
+			"settings":
+			{
+				"buffer_size": 9323,
 				"line_ending": "Unix"
 			}
 		}
@@ -168,6 +184,9 @@
 	"file_history":
 	[
 		"/home/gustavo/uno-project/www/config.xml",
+		"/home/gustavo/uno-project/www/index_old.html",
+		"/home/gustavo/uno-project/www/info.html",
+		"/home/gustavo/uno-project/www/css/app.css",
 		"/home/gustavo/uno-app/www/config.xml",
 		"/home/gustavo/uno-app/www/list.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/index.html",
@@ -291,10 +310,7 @@
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/note/list.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/CI/developer/spam_x_grupo.php",
 		"/home/gustavo/envio_spam_conlista.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/promo.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/api/getUserLocalData.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/otros/install.sh",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/api/dataSubmit.php"
+		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/promo.php"
 	],
 	"find":
 	{
@@ -316,6 +332,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"debug",
 			"zoom",
 			"locateOptions",
 			"this",
@@ -442,8 +459,7 @@
 			")\n            {",
 			"visitas",
 			"clientes",
-			"hero-area",
-			"Quarterly Apple iOS"
+			"hero-area"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -461,24 +477,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "www/config.xml",
+					"file": "www/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6280,
+						"buffer_size": 2200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2170,
+								2170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "www/config.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3841,
+								3841
 							]
 						],
 						"settings":
@@ -488,7 +534,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 700.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "www/js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4617,
+								4617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1377.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -544,12 +620,16 @@
 		"selected_items":
 		[
 			[
-				"lea",
-				"js/leaflet.js"
-			],
-			[
 				"conf",
 				"config.xml"
+			],
+			[
+				"inde",
+				"js/index.js"
+			],
+			[
+				"lea",
+				"js/leaflet.js"
 			],
 			[
 				"li",
@@ -598,10 +678,6 @@
 			[
 				"head",
 				"header.php"
-			],
-			[
-				"inde",
-				"index.php"
 			],
 			[
 				"index",

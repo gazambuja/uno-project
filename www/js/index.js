@@ -127,8 +127,11 @@ var app = {
                         var geo = val.companyLocation.split(','); // Posicion del destino
                         //var distancia = getDistanceFromLatLonInKm(geo[0],geo[1],globalOptions.nowLat,globalOptions.nowLon);
 
-                        var popupContent = "<strong>" + val.companyName + "</strong><br />" + val.companyAddress + "<br><a href='#'>Ver detalles</a>";
-
+                        var popupContent = "<strong>" + val.companyName + "</strong><br />";
+                        popupContent = popupContent + val.companyAddress + "<br>";
+                        popupContent = popupContent + "<a href='#'>Ver detalles</a><br />";
+                        popupContent = popupContent + "<button onclick=\"window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://unowifi.com')\">message, subject, image and link</button>";
+                        
                         L.marker([geo[0],geo[1]]).addTo(map)
                             .bindPopup(popupContent);
 
