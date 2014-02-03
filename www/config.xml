@@ -57,7 +57,10 @@
     <gap:plugin name="com.badrit.macaddress" /> <!-- Get MacAddress plugin -->  
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
-
+    <gap:plugin name="com.phonegap.plugins.facebookconnect">
+        <param name="APP_ID" value="240841289430165" />
+        <param name="APP_NAME" value="unowifi" />
+    </gap:plugin>
     <!--
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
