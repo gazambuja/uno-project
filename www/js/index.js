@@ -78,7 +78,11 @@ var app = {
         });
 
         /* Dibujo el mapa... */
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+        //L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+        L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
+            key: 'b34dc08e5d814c01b618f58dde4c7303',
+            styleId: 121193
+        }).addTo(map);
 
         /* Localizo al usuario en el mapa */
         var lc = L.control.locate({
@@ -103,7 +107,7 @@ var app = {
                 outsideMapBoundsMsg: "You seem located outside the boundaries of the map" // default message for onLocationOutsideMapBounds
             },
             locateOptions: {
-                maxZoom: 17, 
+                maxZoom: 13, 
                 enableHighAccuracy: true}  // define location options e.g enableHighAccuracy: true
         }).addTo(map);
 
