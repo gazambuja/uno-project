@@ -120,78 +120,30 @@ var app = {
         console.log("function getShops");
 
         /* Obtengo y muestro los datos del lugar */
-        $.getJSON( "http://admin.unowifi.com/api/getAllShops/15/" + uid + "?callback=?", function( data ) {
+        $.getJSON( "http://admin.unowifi.com/api_catalog/getAllPoints/100/?callback=?", function( data ) {
 
-            if(data.shops.length > 0){
+            if(data.marks.length > 0){
                 var items = [];
-                $.each( data.shops, function( key, val ) {
-
-
-                    if( val.companyLocation != false ){
-                        var geo = val.companyLocation.split(','); // Posicion del destino
+                $.each( data.marks, function( key, val ) {
+/*
+                'idLocal' 'localName' 'localAddress' 'localTel' 'localDescription' 'localLocation'
+*/
+                    if( val.localLocation != false ){
+                        var geo = val.localLocation.split(','); // Posicion del destino
                         //var distancia = getDistanceFromLatLonInKm(geo[0],geo[1],globalOptions.nowLat,globalOptions.nowLon);
 
-                        var popupContent = "<strong>" + val.companyName + "</strong><br />";
-                        popupContent = popupContent + val.companyAddress + "<br>";
+                        var popupContent = "<strong>" + val.localName + "</strong><br />";
+                        popupContent = popupContent + val.localAddress + "<br>";
                         popupContent = popupContent + "<a href='#'>Ver detalles</a><br />";
-                        //popupContent = popupContent + "<button onclick=\"window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://unowifi.com')\">message, subject, image and link</button>";
+                        popupContent = popupContent + "<button onclick=\"window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://unowifi.com')\">message, subject, image and link</button>";
 
                         L.marker([geo[0],geo[1]]).addTo(map)
                             .bindPopup(popupContent);
 
-
-
-                        //$( "#item_" + val.idClient).attr("data-sort", Math.round(distancia * 100).toFixed(0));
-
                     }
-
-                    /*
-                    $('#articleTemplate').clone().attr('id', "item_" + val.idClient).appendTo('#info');
-                    $( "#item_" + val.idClient + " #logo" ).attr("src", "http://admin.unowifi.com/api/getLogo/" + val.idClient);
-                    $( "#item_" + val.idClient + " #title" ).html(val.companyName);
-                    $( "#item_" + val.idClient + " #description" ).html(val.companyDescription);
-                    $( "#item_" + val.idClient + " #address" ).html(val.companyAddress);
-                    $( "#item_" + val.idClient + " #link").attr("href", "/customer/" + val.idClient);
-                    $( "#item_" + val.idClient + " #callto").attr("href", "tel:" + val.companyTel);
-
-                    if(val.companyIsOpen > 0)
-                        $( "#item_" + val.idClient + " #userData #label_open").removeClass("hide");
-                    else
-                        $( "#item_" + val.idClient + " #userData #label_close").removeClass("hide");
-
-                    if(val.userInfo){
-                        // $( "#item_" + val.idClient + " #userData #visits" ).html(val.userInfo.visitCount);
-                        $( "#item_" + val.idClient + " #userData #points" ).html(val.userInfo.pointsCount.points);
-                        $( "#item_" + val.idClient + " #userData" ).removeClass( "hide" );
-
-                        if(!isNaN(val.userInfo.pointsCount.points))
-                            $( "#item_" + val.idClient + " #userData #label_points" ).hide();
-
-                    }
-
-                    if( !isNaN(globalOptions.nowLat) && val.companyLocation != false){
-                        var geo = val.companyLocation.split(','); // Posicion del destino
-                        var distancia = getDistanceFromLatLonInKm(geo[0],geo[1],globalOptions.nowLat,globalOptions.nowLon);
-                        $( "#item_" + val.idClient).attr("data-sort", Math.round(distancia * 100).toFixed(0));
-
-                    }
-
-                    $( "#item_" + val.idClient ).click(function(){ 
-                        // Cuando hago click en el div, lleva al detalle
-                        $(location).attr('href', "/customer/" + val.idClient);
-                    });
-                    */
 
                 });
 
-                var sortedDivs = $("#info").find(".order").toArray().sort(sorter);
-                $.each(sortedDivs, function (index, value) {
-                    $("#info").append(value);
-                });
-
-                $.each( data.shops, function( key, val ) {
-                    $( "#item_" + val.idClient ).removeClass( "hide" );
-                });
             }
 
         });
