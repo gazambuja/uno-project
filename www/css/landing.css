@@ -1,12 +1,12 @@
 .header-background{
 	background-color:#1d9ce5;
-    background-image:url('/img/skyline.png');
+    background-image:url('skyline.png');
 	background-repeat:repeat-x;
  	-moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
     -o-background-size: 100% 100%;           /* Opera 9.5 */
 	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
     background-size: 100% 100%;           /* CSS3-compliant browsers */
-	-moz-border-image: url(/img/skyline.png) 0;  
+	-moz-border-image: url(skyline.png) 0;  
 	background-size: inherit;
 	background-position: center;
 
