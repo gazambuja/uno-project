@@ -158,7 +158,7 @@ var app = {
 
 
 function showInfo(point){
-    var content =       "<h2 class='promoTitle clearfix'><img src='http://admin.unowifi.com/api_catalog/getLogo/cards/"+point.idCard+"' class='pull-left img_card'>" + point.promoFeature + "</h2>";
+    var content =       "<h3 class='promoTitle clearfix'><img src='http://admin.unowifi.com/api_catalog/getLogo/cards/"+point.idCard+"' class='pull-left img_card'>" + point.promoFeature + "</h3>";
     content = content + "<h4>Detalles de la promoción</h4>" ;
     content = content + "<p>" + point.promoDescription + "</p>" ;
     content = content + "<h4>Conozca más sobre " + point.localName + "</h4>" ;
