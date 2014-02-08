@@ -1,21 +1,22 @@
 CACHE MANIFEST
-	# Date 08022014 1345
+	# Date 08022014 1753
 
 CACHE:
 	js/jquery.min.js
 	js/jquery-plugins.js
 	js/bootstrap.min.js
 	js/fontawesome-markers.js
-	js/index.js
+	js/main.js
 	css/bootstrap.min.css
+	css/animate.min.css
+	css/custom.css
+	css/landing.css
 	font-awesome/css/font-awesome.min.css
 	font-awesome/fonts/FontAwesome.otf
 	font-awesome/fonts/fontawesome-webfont.eot
 	font-awesome/fonts/fontawesome-webfont.svg
 	font-awesome/fonts/fontawesome-webfont.ttf
 	font-awesome/fonts/fontawesome-webfont.woff	
-	css/animate.min.css
-	css/custom.css
 
 NETWORK:
 	http://admin.unowifi.com

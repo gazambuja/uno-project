@@ -99,7 +99,7 @@ var app = {
         /* Centro el mapa en Montevideo */
         var mapOptions = {
           center: new google.maps.LatLng(-34.90,-56.1624),
-          zoom: 13,
+          zoom: 11,
           disableDefaultUI: true,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
@@ -126,7 +126,8 @@ var app = {
                 title: 'Estas aquí!'
             });
 
-            map.setCenter(pos);
+            map.panTo(pos);
+            map.setZoom(17);
           }, function() {
             console.log("No hay servicio de geolocation");
           });
