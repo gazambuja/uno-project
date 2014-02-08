@@ -1,5 +1,5 @@
 CACHE MANIFEST
-	# Date 06022014 1135
+	# Date 08022014 1345
 
 CACHE:
 	js/jquery.min.js
@@ -9,22 +9,14 @@ CACHE:
 	js/index.js
 	css/bootstrap.min.css
 	font-awesome/css/font-awesome.min.css
+	font-awesome/fonts/FontAwesome.otf
+	font-awesome/fonts/fontawesome-webfont.eot
+	font-awesome/fonts/fontawesome-webfont.svg
+	font-awesome/fonts/fontawesome-webfont.ttf
+	font-awesome/fonts/fontawesome-webfont.woff	
 	css/animate.min.css
 	css/custom.css
 
 NETWORK:
-	http://maps.gstatic.com/
-	http://maps.google.com/
-	http://maps.googleapis.com/
-	http://mt0.googleapis.com/
-	http://mt1.googleapis.com/
-	http://mt2.googleapis.com/
-	http://mt3.googleapis.com/
-	http://khm0.googleapis.com/
-	http://khm1.googleapis.com/
-	http://cbk0.googleapis.com/
-	http://cbk1.googleapis.com/
-	http://www.google-analytics.com/
-	http://gg.google.com/
-	http://csi.gstatic.com/
-	http://admin.unowifi.com/
+	http://admin.unowifi.com
+	*

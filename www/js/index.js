@@ -20,15 +20,14 @@ var app = {
             window.isphone = true;
         }
 
-        // PARA PRUEBAS:
-        window.isphone = false;
-
         if(window.isphone) {
             console.log("deviceready");
             document.addEventListener("deviceready", this.onDeviceReady, false);
+            document.addEventListener("backbutton", backKeyDown, true); 
         } else {
             app.onDeviceReady();
         }
+
 
         google.maps.event.addDomListener(window, 'load', app.geoMe());
         google.maps.event.addListenerOnce(map, 'idle', function(){
@@ -37,6 +36,15 @@ var app = {
             $("#loadingDiv").hide();
             app.getShops();
         });
+
+        window.applicationCache.addEventListener('updateready', function(e) {
+            if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+              window.applicationCache.swapCache();
+              if (confirm('Nueva versión disponible, desea verla?')) {
+                window.location.reload();
+              }
+            }
+        }, false);
         
     },
     // deviceready Event Handler
@@ -57,7 +65,8 @@ var app = {
         });
 */
         $('body').height( $(window).height() );
-        $('#infoWindow').height( $(window).height() - $('#top').height() );
+        $('#infoWindow').height( $(window).height() - $('#top').height() + 50);
+        $('#infoWindow').css("padding-top", $('#top').height() + 40 );
 
 /*      OBTENGO LA DIRECCION MAC */
         if(window.MacAddress){
@@ -123,7 +132,7 @@ var app = {
           });
         }
 
-        $('#map').height( $(window).height() - $('#map').offset().top );
+        $('#map').height( $(window).height() - $('#map').offset().top);
     },
 
     getShops: function() {
@@ -158,7 +167,7 @@ var app = {
 
 
 function showInfo(point){
-    var content =       "<h3 class='promoTitle clearfix'><img src='http://admin.unowifi.com/api_catalog/getLogo/cards/"+point.idCard+"' class='pull-left img_card'>" + point.promoFeature + "</h3>";
+    var content =       "<h2 class='promoTitle clearfix'><img src='http://admin.unowifi.com/api_catalog/getLogo/cards/"+point.idCard+"' class='pull-left img_card'>" + point.promoFeature + "</h2>";
     content = content + "<h4>Detalles de la promoción</h4>" ;
     content = content + "<p>" + point.promoDescription + "</p>" ;
     content = content + "<h4>Conozca más sobre " + point.localName + "</h4>" ;
@@ -210,18 +219,19 @@ function sorter(a, b) {
     return a.getAttribute('data-sort') - b.getAttribute('data-sort');
 };
 
-
+function backKeyDown() { 
+    // Call my back key code here.
+    console.log("Atrás..");
+    $("#infoWindow").modal("hide");
+}
 
 /* Capturo eventos */
 $('#infoWindow').on('hidden.bs.modal', function () {
-    console.log("se cierra un modal");
     $("body").height( $(window).height() );
     $('#map').height( $(window).height() - $('#map').offset().top );
-
 });
 
 $(window).resize(function() {
-    console.log("se hace un resize");
     $("body").height( $(window).height() );
     $('#map').height( $(window).height() - $('#map').offset().top );
 });
