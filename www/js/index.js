@@ -214,11 +214,14 @@ function sorter(a, b) {
 
 /* Capturo eventos */
 $('#infoWindow').on('hidden.bs.modal', function () {
+    console.log("se cierra un modal");
     $("body").height( $(window).height() );
     $('#map').height( $(window).height() - $('#map').offset().top );
+
 });
 
 $(window).resize(function() {
+    console.log("se hace un resize");
     $("body").height( $(window).height() );
     $('#map').height( $(window).height() - $('#map').offset().top );
 });
