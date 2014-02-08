@@ -209,3 +209,8 @@ function deg2rad(deg) {
 function sorter(a, b) {
     return a.getAttribute('data-sort') - b.getAttribute('data-sort');
 };
+
+$(window).resize(function() {
+    $("body").height( $(window).height() );
+    $('#map').height( $(window).height() - $('#map').offset().top );
+});
