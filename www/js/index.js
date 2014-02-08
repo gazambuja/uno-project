@@ -29,6 +29,14 @@ var app = {
         } else {
             app.onDeviceReady();
         }
+
+        google.maps.event.addDomListener(window, 'load', app.geoMe());
+        google.maps.event.addListenerOnce(map, 'idle', function(){
+            $("#map").css({ opacity: 1, zoom: 1 });
+            $('#map').addClass('animated bounceInDown');
+            $("#loadingDiv").hide();
+            app.getShops();
+        });
         
     },
     // deviceready Event Handler
@@ -39,15 +47,16 @@ var app = {
         app.receivedEvent('deviceready');
         console.log("function onDeviceReady");
 
+/*
         $.getJSON( "http://admin.unowifi.com/api/getUID/?callback=?", function( data ) {
             google.maps.event.addDomListener(window, 'load', app.geoMe(data.uid));
             google.maps.event.addListenerOnce(map, 'idle', function(){
                 $("#map").css({ opacity: 1, zoom: 1 });
                 $('#map').addClass('animated bounceInDown');
                 $("#loadingDiv").hide();
-            });
         });
-
+*/
+        $('body').height( $(window).height() );
         $('#infoWindow').height( $(window).height() - $('#top').height() );
 
 /*      OBTENGO LA DIRECCION MAC */
@@ -75,7 +84,7 @@ var app = {
         console.log('Received Event: ' + id);
     },
 
-    geoMe: function(uid) {
+    geoMe: function() {
         console.log("function geoMe");
 
         /* Centro el mapa en Montevideo */
@@ -115,12 +124,9 @@ var app = {
         }
 
         $('#map').height( $(window).height() - $('#map').offset().top );
-
-        /* Localizo por defecto al usuario */
-        app.getShops(uid);
     },
 
-    getShops: function(uid) {
+    getShops: function() {
         console.log("function getShops");
 
         /* Obtengo y muestro los datos del lugar */
