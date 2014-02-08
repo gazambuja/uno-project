@@ -210,6 +210,14 @@ function sorter(a, b) {
     return a.getAttribute('data-sort') - b.getAttribute('data-sort');
 };
 
+
+
+/* Capturo eventos */
+$('#infoWindow').on('hidden.bs.modal', function () {
+    $("body").height( $(window).height() );
+    $('#map').height( $(window).height() - $('#map').offset().top );
+});
+
 $(window).resize(function() {
     $("body").height( $(window).height() );
     $('#map').height( $(window).height() - $('#map').offset().top );
