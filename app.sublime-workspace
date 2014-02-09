@@ -116,34 +116,35 @@
 	"buffers":
 	[
 		{
-			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/manifest.appcache",
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/main.js",
 			"settings":
 			{
-				"buffer_size": 513,
+				"buffer_size": 8716,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/index.js",
+			"settings":
+			{
+				"buffer_size": 256,
+				"line_ending": "Unix",
+				"name": "var fileref=document.createElement('script')"
 			}
 		},
 		{
 			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
 			"settings":
 			{
-				"buffer_size": 4047,
+				"buffer_size": 4276,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/css/custom.css",
 			"settings":
 			{
-				"buffer_size": 2968,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/main.js",
-			"settings":
-			{
-				"buffer_size": 8412,
+				"buffer_size": 1912,
 				"line_ending": "Unix"
 			}
 		}
@@ -196,10 +197,15 @@
 	"file_history":
 	[
 		"/home/gustavo/uno-project/www/index.html",
-		"/home/gustavo/uno-project/www/css/landing.css",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/css/landing.css",
-		"/home/gustavo/Dropbox/Public/Canales.html",
+		"/home/gustavo/uno-project/www/manifest.appcache",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/manifest.appcache",
 		"/home/gustavo/uno-project/www/main.html",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/css/landing.css",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
+		"/home/gustavo/uno-project/www/js/jquery-plugins.js",
+		"/home/gustavo/uno-project/www/font-awesome/less/path.less",
+		"/home/gustavo/uno-project/www/css/landing.css",
+		"/home/gustavo/Dropbox/Public/Canales.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/jquery-plugins.js",
 		"/home/gustavo/uno-project/www/font-awesome/less/font-awesome.less",
@@ -210,8 +216,6 @@
 		"/home/gustavo/uno-project/www/main2.html",
 		"/home/gustavo/uno-project/www/js/index.js",
 		"/home/gustavo/uno-project/www/config.xml",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
-		"/home/gustavo/uno-project/www/manifest.appcache",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/manifest.appcache",
 		"/home/gustavo/uno-project/www/js/jquery.min.js",
 		"/home/gustavo/Documentos/uno/js/index.js",
@@ -319,10 +323,7 @@
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/config/routes.php",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/panel/modal.lockme.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/panel/js/custom.js",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/page_missing.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/error404.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/.htaccess",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/404.php"
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/page_missing.php"
 	],
 	"find":
 	{
@@ -344,6 +345,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#top",
+			"#map",
+			"'#top'",
+			"height",
+			"$('#top').",
+			"'#top'",
 			"/img/",
 			"p",
 			"../back.jpg",
@@ -465,13 +472,7 @@
 			"LG",
 			"Nokia",
 			"bg-succes",
-			"idUser",
-			"topUsers",
-			"idUser",
-			"topUsers",
-			"inbox",
-			"idUser",
-			"his->users"
+			"idUser"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -495,108 +496,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/manifest.appcache",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								36,
-								36
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4047,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3824,
-								3824
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 752.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2968,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1755,
-								1755
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8412,
+						"buffer_size": 8716,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4753,
-								4753
+								1727,
+								1727
 							]
 						],
 						"settings":
@@ -606,10 +518,98 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1384.0,
+						"translation.y": 391.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var fileref=document.createElement('script')",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4258,
+								4258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -661,6 +661,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"plug",
+				"js/jquery-plugins.js"
+			],
+			[
+				"pl",
+				"js/jquery-plugins.js"
+			],
 			[
 				"confi",
 				"config.xml"
