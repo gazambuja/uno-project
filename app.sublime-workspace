@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-image"
+			],
+			[
 				"en",
 				"enableHighAccuracy"
 			],
@@ -112,35 +116,34 @@
 	"buffers":
 	[
 		{
-			"file": "www/index.html",
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/manifest.appcache",
 			"settings":
 			{
-				"buffer_size": 3269,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/home/gustavo/Documentos/uno/js/index.js",
-			"settings":
-			{
-				"buffer_size": 7308,
+				"buffer_size": 513,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/css/theme-uno.css",
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
 			"settings":
 			{
-				"buffer_size": 2437,
-				"line_ending": "Unix",
-				"name": "/*"
+				"buffer_size": 4047,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/config.xml",
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
 			"settings":
 			{
-				"buffer_size": 6790,
+				"buffer_size": 2968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/main.js",
+			"settings":
+			{
+				"buffer_size": 8412,
 				"line_ending": "Unix"
 			}
 		}
@@ -192,11 +195,32 @@
 	},
 	"file_history":
 	[
+		"/home/gustavo/uno-project/www/index.html",
+		"/home/gustavo/uno-project/www/css/landing.css",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/css/landing.css",
+		"/home/gustavo/Dropbox/Public/Canales.html",
+		"/home/gustavo/uno-project/www/main.html",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/jquery-plugins.js",
+		"/home/gustavo/uno-project/www/font-awesome/less/font-awesome.less",
+		"/home/gustavo/uno-project/www/font-awesome/less/larger.less",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/css/custom.css",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/index.js",
+		"/home/gustavo/uno-project/www/css/custom.css",
+		"/home/gustavo/uno-project/www/main2.html",
 		"/home/gustavo/uno-project/www/js/index.js",
+		"/home/gustavo/uno-project/www/config.xml",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
+		"/home/gustavo/uno-project/www/manifest.appcache",
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/manifest.appcache",
+		"/home/gustavo/uno-project/www/js/jquery.min.js",
+		"/home/gustavo/Documentos/uno/js/index.js",
+		"/home/gustavo/uno-project/www/css/bootstrap.min.css",
+		"/home/gustavo/uno-project/www (copia)/index.html",
+		"/home/gustavo/uno-project/www/css/theme-uno.css",
 		"/home/gustavo/uno-project/www/font-awesome/less/mixins.less",
 		"/home/gustavo/uno-project/www/css/leaflet.awesome-markers.css",
 		"/home/gustavo/uno-project/www/js/leaflet.awesome-markers.min.js",
-		"/home/gustavo/uno-project/www/config.xml",
 		"/home/gustavo/uno-project/www/index_old.html",
 		"/home/gustavo/uno-project/www/info.html",
 		"/home/gustavo/uno-project/www/css/app.css",
@@ -215,7 +239,6 @@
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/logo.php",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/header.php",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/footer.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/manifest.appcache",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/files/js/custom.toShop.js",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/admin/files/js/custom.toShop.js",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-admin-panel/customer/info.html",
@@ -223,7 +246,6 @@
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/customer/header.php",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/customer/list.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/customer/manifest.appcache",
-		"/home/gustavo/Dropbox/Public/Canales.html",
 		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/sensor/version",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/customer/evercookie-master/evercookie_sl/evercookie/App.xaml",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/customer/index.php",
@@ -300,26 +322,7 @@
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/page_missing.php",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/error404.php",
 		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/.htaccess",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/404.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/views/welcome_message.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/welcome.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/config/database.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/panel/js/landing.js",
-		"/home/gustavo/Dropbox/Personal/Proyectos/CI/unicos por mes",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo (2)/landing.html",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/panel/modal.html",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/survey_results.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/landing_apple.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/landing_google.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/functions.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/wifiMonitor/server/html/first_step.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/panel/js/scroll/smoothscroll.js",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/js/landing.js",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/form.html",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/landing.html",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/api/index.php",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/less/readme.txt",
-		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/note/index.html"
+		"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/todo/admin/application/controllers/404.php"
 	],
 	"find":
 	{
@@ -341,6 +344,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/img/",
+			"p",
+			"../back.jpg",
+			"css",
+			"top",
+			"height",
+			"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/",
+			"font",
+			"\n/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/font",
+			"/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/",
+			"accel",
+			"debug",
+			"    ",
+			"54b4eb",
 			"' =",
 			"debug",
 			"zoom",
@@ -454,21 +471,7 @@
 			"topUsers",
 			"inbox",
 			"idUser",
-			"his->users",
-			"clients_users",
-			"warnin",
-			"ajax-form",
-			"input-group-addon",
-			"slim-scroll",
-			"inbox",
-			"map",
-			"getConnectedCount",
-			"getPromoPoints",
-			"nosotros",
-			"bg-info",
-			")\n            {",
-			"visitas",
-			"clientes"
+			"his->users"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -476,6 +479,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"2fa4e7"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -486,24 +490,53 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "www/index.html",
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/manifest.appcache",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3269,
+						"buffer_size": 513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3077,
-								3077
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3824,
+								3824
 							]
 						],
 						"settings":
@@ -513,27 +546,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 525.0,
+						"translation.y": 752.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/home/gustavo/Documentos/uno/js/index.js",
+					"buffer": 2,
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/main.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7308,
+						"buffer_size": 2968,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1755,
+								1755
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/gustavo/Dropbox/Personal/Proyectos/UNO/Website/uno-catalog/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4753,
+								4753
 							]
 						],
 						"settings":
@@ -543,68 +606,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "www/css/theme-uno.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2437,
-								2437
-							]
-						],
-						"settings":
-						{
-							"auto_name": "/*",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1305.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "www/config.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6790,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								571,
-								571
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 198.0,
+						"translation.y": 1384.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -651,7 +653,7 @@
 	"project": "app.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -659,6 +661,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"confi",
+				"config.xml"
+			],
+			[
+				"index",
+				"js/index.js"
+			],
+			[
+				"custo",
+				"css/custom.css"
+			],
+			[
+				"main",
+				"main.html"
+			],
 			[
 				"conf",
 				"config.xml"
@@ -682,10 +700,6 @@
 			[
 				"lis",
 				"list.html"
-			],
-			[
-				"custo",
-				"js/custom.toShop.js"
 			],
 			[
 				"index.c",
@@ -718,10 +732,6 @@
 			[
 				"head",
 				"header.php"
-			],
-			[
-				"index",
-				"index.php"
 			],
 			[
 				"hta",
@@ -970,10 +980,6 @@
 			[
 				"proc",
 				"html/process.php"
-			],
-			[
-				"main",
-				"main.php"
 			],
 			[
 				"firs",

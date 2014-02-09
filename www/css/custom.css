@@ -21,6 +21,59 @@ body, html {overflow: hidden;}
 	padding: 15px 0 15px 15px;
 }
 
+/* Star login page */
+.header-background{
+	background-color:#1d9ce5;
+    background-image:url('skyline.png');
+	background-repeat:repeat-x;
+ 	-moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    background-size: 100% 100%;           /* CSS3-compliant browsers */
+	-moz-border-image: url(skyline.png) 0;  
+	background-size: inherit;
+	background-position: center;
+
+	min-height: 150px;
+	border-bottom: 1px solid #FFFFFF;
+}
+#page_login .navbar {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#page_login .h1, h1 {
+	text-align: center;
+	color: #707070;
+	margin-top: -10px;
+}
+
+#page_login .h4, h4 {
+	width: 80%;
+	margin: auto;
+	font-family: serif;
+	font-size: 16px;
+	color: #A8A8A8;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+#welcome_msg{
+	margin-top: 15px;
+}
+
+#login_btn, #footer{
+	margin-top: 35px;
+}
+
+#page_login .btn-full {
+	width: 100%;
+}
+/* End login page */
+
 /* Modal custom */
 .modal {overflow: hidden;}
 .modal-lg {

@@ -11,7 +11,7 @@
     <!-- link href="css/bootstrap.css" rel="stylesheet" -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,41 +21,89 @@
     <![endif]-->
   </head>
   <body>
-    <div id="top" class="navbar navbar-default header-background">
-      <div class="container-full">
-        <div class="navbar-header"></div>
+
+    <div id="page_login">
+      <div id="top_login" class="navbar navbar-default header-background">
+        <div class="container-full">
+          <div class="navbar-header"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="welcome" class="row">
+            <div class="col-lg-12">
+              <h1>UNO Maps</h1>
+            </div>
+        </div>
+        <div id="welcome_msg" class="row">
+            <div class="col-lg-12">
+              <h4>Ingrese y vea todos los lugares donde tiene descuento con sus tarjetas y los lugares donde tiene internet gratis</h4>
+            </div>
+        </div>
+
+        <div id="login_btn" class="row">
+            <div class="col-lg-12 center">
+              <a href="#" onClick="javascript:goToMain();" class="btn btn-primary btn-lg btn-full" role="button">Acceder con <b>Facebook</b></a>
+            </div>
+        </div>
+
+        <div id="footer" class="row">
+            <div class="col-lg-12 center">
+              <small>Al acceder se envían datos del dispositivo y de localización a <i>UNO | Loyalty Marketing</i>. Vea nuestros <a href="#">Términos y condiciones</a></small>
+            </div>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <div id="welcome" class="row">
-          <div class="col-lg-12">
-            <h1>UNO Maps</h1>
+    <div id="page_map" class="hide">
+      <div id="top" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#" onClick="javascript:goToLogin();" class="navbar-brand"> <i class="fa fa-angle-left"></i> </a>
+            <a href="#" class="navbar-brand"><span id="pointsFound">0</span> lugares encontrados</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-full">
+          <div class="row">
+            <div class="page-header">
+              <div class="col-lg-12">
+                <div id="map" class="hideWindow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="loadingDiv">
+            <div class="col-lg-12 col-centered">
+                <i class="fa fa-cog fa-spin fa-5x"></i>
+            </div>
           </div>
       </div>
-      <div id="welcome_msg" class="row">
-          <div class="col-lg-12">
-            <h4>Ingrese y vea todos los lugares donde tiene descuento con sus tarjetas y los lugares donde tiene internet gratis</h4>
+      <div id="infoWindow" class="modal animated bounceInUp bs-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+             <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="infoWindowTitle"></h4>
+              </div>
+              <div id="infoWindowDetails"></div>
           </div>
+        </div>
       </div>
-
-      <div id="login_btn" class="row">
-          <div class="col-lg-12 center">
-            <a href="main.html" class="btn btn-primary btn-lg btn-full" role="button">Acceder con <b>Facebook</b></a>
-          </div>
-      </div>
-
-      <div id="footer" class="row">
-          <div class="col-lg-12 center">
-            <small>Al acceder se envían datos del dispositivo y de localización a <i>UNO | Loyalty Marketing</i>. Vea nuestros <a href="#">Términos y condiciones</a></small>
-          </div>
-      </div>
-
     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-plugins.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
 
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true&language=es&region=UY&extension=.js&output=embed" type='text/javascript'></script>
+    <script src="js/fontawesome-markers.js"></script>
+
+    <script src="phonegap.js"></script>  
+    <script src="device.js"></script>  
+    <script src="notification.js"></script> 
+    <script src="MacAddress.js"></script> 
+    <script src="SocialSharing.js"></script> 
+    
   </body>
 </html>
